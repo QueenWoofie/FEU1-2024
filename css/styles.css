@@ -1,9 +1,43 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("css/_reset.css");
+/*@import url("css/_reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("css/_variables.css");
+/*@import url("css/_variables.css");
 /* Feel free to add as many of these imports as you need */
+
+:root {
+  --color-primary: #ffffff; /*text*/
+  --color-secondary: #0F1417; /*background*/
+  --color-nav: #03838F; /*footer + header*/
+  --color-menu: #48abb4; /*sidebar/menu*/
+  --color-breadcrumb: #565656; /*breadcrumbs*/
+  --color-breadcrumbactive: #ffffffbd;
+
+  --color-btn: #028e9b;
+  --color-btnextra: #06555c; /*icon backgrounds*/
+
+  --color-texthover: #FF8000; /*text*/
+  
+  --boxshadow-hover: #00eaff21 0px 0px 20px 10px inset; /*logo*/
+
+  --height-header: 80px;
+  --main-padding: 10px 100px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-style:normal;
+  line-height: 1.6;
+  font-size: 16px;
+}
 
 body {
   color: var(--color-primary);  
