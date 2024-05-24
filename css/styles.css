@@ -1,0 +1,335 @@
+/* Use import to split up your CSS into manageable chunks */
+@import url("_reset.css");
+/* Files that are only needed to be imported are called partials */
+/* These are marked with an underscore: */
+@import url("_variables.css");
+/* Feel free to add as many of these imports as you need */
+
+body {
+  color: var(--color-primary);  
+  background-color: var(--color-secondary);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}*/
+
+/* Main Content */
+
+main {
+  padding: var(--main-padding);
+  width: calc(100% - var(--main-padding));
+}
+
+.breadcrumb {
+  display:flex;
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.75em;
+  border-bottom: 2px solid var(--color-breadcrumb);
+  width: 100%;
+}
+
+.breadcrumb-item {
+  margin-right: 10px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: var(--color-breadcrumb);
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item::after {
+  content: ">";
+  margin-left: 10px;
+  color: var(--color-breadcrumb)
+}
+
+.breadcrumb-item:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.breadcrumb-item.active {
+  color: var(--color-breadcrumbactive);
+}
+
+/* header, footer and logo */
+
+header {
+  background-color: var(--color-nav);
+  color: var(--color-primary);
+  display: flex;
+  height: var(--height-header);
+  width: 100%;
+  padding: 15px 100px;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+header .left-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+header .menu-icon, header .cart-icon {
+  width: 40px;
+  height: auto;
+}
+
+footer {
+  background-color: var(--color-nav);
+  color: var(--color-primary);
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 15px 100px;
+}
+
+/* logo */ 
+
+header .logo {
+  position: fixed;
+  left: 50%;
+  top: 10px;
+}
+
+footer .logo {
+  position: relative;
+  left: 0%;
+  top: 10px;
+}
+
+a .images {
+  display: inline-block
+} 
+
+.logo {
+  display: block;
+  width: auto;
+  height: 60px;
+}
+
+.logo:hover {
+  box-shadow: var(--boxshadow-hover);
+}
+
+/* Sidebar / Menu */
+
+.sidebar {
+  height: calc(100% - var(--height-header));
+  width: 0;
+  position: fixed;
+  z-index: 1002;
+  top: 80px;
+  left: 0;
+  background-color: var(--color-menu);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-menu);
+  opacity: 0.1;
+  z-index: 999;
+  display: none;
+}
+
+/* Close Button */
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  margin-left: 50px;
+}
+
+.closemenu-icon {
+  width: 30px;
+  height: auto;
+}
+
+/* Main List  */
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 10px 0px;
+  width: 400px;
+  text-align: center;
+  flex-grow: 1;
+  margin-top: -3px;
+}
+
+.sidebar ul li {
+  padding: 5px 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: var(--color-primary);
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.sidebar ul li a:hover {
+  color: var(--color-texthover);
+  font-size: 1.15em;
+}
+
+.hidden {
+  display: none;
+}
+
+.displaygenre {
+  background-color: var(--color-btn);
+  border-radius: 30px;
+}
+
+/* Extended List  */
+
+.sidebar-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.sidebar-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.sidebar-link:hover {
+  color: var(--color-texthover);
+  font-size: 1.05;
+}
+
+/* Main Category / Titles */
+
+.sidetitle {
+  font-size: 1.25em;
+  color: var(--color-primary);
+  background-color: var(--color-btn);
+  display: flex;
+  width: 300px;
+  height: 65px;
+  padding: 12px 30px;
+  align-items: center;
+  gap: 15px;
+  border-radius: 30px;
+  border: 0;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sidetitle:hover {
+  color: var(--color-texthover);
+  font-size: 1.50em;
+  cursor: pointer;
+}
+
+/* Logo */
+
+.sidebar-logo {
+  width: 150px;
+  height: auto;
+  padding-top: 10px;
+}
+
+.sidebar-logo:hover {
+  box-shadow: var(--boxshadow-hover);
+}
+
+/* Icon Sizing */
+.iconsml {
+  width: 30px;
+  height: auto;
+}
+
+.iconmed {
+  width: 50px;
+  height: auto;
+}
+
+.iconlrg {
+  width: 60px;
+  height: auto;
+}
+
+/* Fonts */
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
