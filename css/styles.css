@@ -5,14 +5,6 @@
 @import url("_variables.css");
 /* Feel free to add as many of these imports as you need */
 
-body {
-  box-sizing: border-box;
-  min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  font-style:normal;
-  line-height: 1.6;
-  font-size: 16px;
-}
 
 body {
   color: var(--color-primary);  

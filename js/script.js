@@ -24,5 +24,5 @@ function toggleGenres () {
 }
 
 /* Carousel - CODE TAKEN FROM W3SCHOOLS */
-/*let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let slideId = ["mySlidesall", "mySlidesaction", "mySlidescomedy", "mySlidescrime" ]
+let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let slideId = ["mySlidesall", "mySlidesaction", "mySlidescomedy", "mySlidescrime", "mySlidesdrama", "mySlidesfamily", "mySlidesfantasy", "mySlideshorror", "mySlidesmusical", "mySlidesromance", "mySlidesscifi", "mySlidesshort", "MySlidesthriller"];
