@@ -1,10 +1,11 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("_resetupd.css");
+/* @import url("_resetupd.css"); */
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("_variablesupd.css");
+/* @import url("_variablesupd.css"); */
 /* Feel free to add as many of these imports as you need */
-
+@import "_resetupd.css";
+@import "_variablesupd.css";
 
 body {
   color: var(--color-primary);  
