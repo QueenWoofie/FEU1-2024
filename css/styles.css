@@ -251,6 +251,20 @@ a .images {
   font-size: 1.05;
 }
 
+/* Changelog */
+
+.version-num {
+  position: relative;
+  font-size: 0.75em;
+  text-decoration: none;
+  color: var(--color-breadcrumb);
+  margin: 10px 0px;
+}
+
+.version-num:hover {
+  color: var(--color-breadcrumbactive)
+}
+
 /* Main Category / Titles */
 
 .sidetitle {
