@@ -24,5 +24,23 @@ function toggleGenres () {
 }
 
 /* Carousel - CODE TAKEN FROM W3SCHOOLS */
-let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let slideId = ["mySlidesall", "mySlidesaction", "mySlidescomedy", "mySlidescrime", "mySlidesdrama", "mySlidesfamily", "mySlidesfantasy", "mySlideshorror", "mySlidesmusical", "mySlidesromance", "mySlidesscifi", "mySlidesshort", "MySlidesthriller"];
+// let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+// let slideId = ["mySlidesall", "mySlidesaction", "mySlidescomedy", "mySlidescrime", "mySlidesdrama", "mySlidesfamily", "mySlidesfantasy", "mySlideshorror", "mySlidesmusical", "mySlidesromance", "mySlidesscifi", "mySlidesshort", "MySlidesthriller"];
+
+// for (let i = 0; i < slideId.length; i++) {
+//     showSlides(1, i);
+// }
+
+// function plusSlides(n, no) {
+//     showSlides(slideIndex[no] +=n, no)
+// }
+
+// function showSlides(n, no) {
+//     let i;
+//     let x = document.getElementsByClassName(slideId[no]);
+//     if (n > x.length) {slideIndex[no] = x.length}
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display ="none";
+//     }
+//     x[slideIndex[no]-1].style.display = "block";
+// }

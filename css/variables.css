@@ -6,8 +6,11 @@
   --color-secondary: #0F1417; /*background*/
   --color-nav: #03838F; /*footer + header*/
   --color-menu: #48abb4; /*sidebar/menu*/
-  --color-breadcrumb: #565656; /*breadcrumbs*/
+  --color-breadcrumb: #565656; /*breadcrumbs + box backgrounds*/
   --color-breadcrumbactive: #ffffffbd;
+  --color-boxbackground: #565656;
+  --color-categorybtn: #48abb4;
+  --color-categorybtnhover: #ff8000;
 
   --color-btn: #028e9b;
   --color-btnextra: #06555c; /*icon backgrounds*/
