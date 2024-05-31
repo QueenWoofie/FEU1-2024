@@ -1,3 +1,54 @@
+/* PROMO BANNER */
+
+.promo-banner {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.promo-img {
+    background: var(--color-nav);
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.promo-banner img {
+    max-height: 800px;
+    object-fit: scale-down;
+    border-radius: 20px;
+}
+
+.promo-btn {
+    position: absolute;
+    float: center;
+    bottom: 50%;
+    left: 50%;
+    width: 400px;
+    background-color: var(--color-btnextra);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 20px;
+    height: 60px;
+    align-content: center;
+    transition: 0.3s;
+}
+
+.promo-btn a {
+    font-size: 1.1em;
+}
+
+.promo-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-categorybtnhover);
+    scale: 1.05;
+}
+
+/* MOVIE CATEGORY SECTION */
+
 .category {
     padding: 20px;
     margin-bottom: 20px;
@@ -59,6 +110,7 @@
     width: 100%;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    object-fit: scale-down;
 }
 
 .movie img:hover {
