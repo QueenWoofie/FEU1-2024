@@ -144,6 +144,7 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    align-content: center;
     z-index: 100;
 }
 
@@ -163,6 +164,7 @@
     }
     .view-more {
         display: flex;
+        justify-content: center;
     }
 }
 
@@ -190,6 +192,7 @@
     }
     .view-more {
         display: flex;
+        justify-content: center;
     }
     .movie-info {
         padding: 5px;
@@ -201,11 +204,11 @@
         font-size: 0.8em;
     }
     .movie-info img {
-        width: 20px;
+        width: 10px;
         height: auto;
         position: absolute;
         top: 5px;
-        right: 0px;
+        right: 5px;
         z-index: 101;
       }
 }
