@@ -6,45 +6,65 @@
     position: relative;
     text-align: center;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .promo-img {
     background: var(--color-nav);
     border-radius: 20px;
-    display: inline-block;
-    justify-content: center;
+    display: flex;
+    padding: 5px;
+    /* justify-content: center; */
+    
 }
 
 .promo-banner img {
     max-height: 800px;
-    object-fit: scale-down;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 20px;
+    position: relative;
 }
 
 .promo-btn {
     position: absolute;
-    float: center;
-    bottom: 50%;
+    /* float: center; */
+    /* bottom: 50%; */
     left: 50%;
-    width: 400px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 40%;
     background-color: var(--color-btnextra);
-    color: var(--color-primary);
-    text-decoration: none;
+    /* color: var(--color-primary); */
+    /* text-decoration: none; */
     border-radius: 20px;
-    height: 60px;
+    height: auto;
+    min-height: fit-content;
+    display: flex;
     align-content: center;
+    align-items: center;
+    justify-content: center;
     transition: 0.3s;
 }
 
 .promo-btn a {
     font-size: 1.1em;
+    text-decoration: none;
+    color: var(--color-primary);
 }
 
 .promo-btn:hover {
     cursor: pointer;
     background-color: var(--color-categorybtnhover);
     scale: 1.05;
+}
+
+@media screen and (max-width: 900) {
+    .promo-btn a {
+        font-size: 0.8em;
+    }
 }
 
 /* MOVIE CATEGORY SECTION */
@@ -88,6 +108,13 @@
     align-items: center;
 }
 
+@media screen and (max-width: 800) {
+    .category-content {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+
 @media screen and (max-width: 1735) {
     .category-content {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -105,6 +132,10 @@
         grid-template-columns: repeat(auto-fill, minmax (300px, 1fr));
     }
 }
+
+
+
+
 
 .movie img {
     width: 100%;
