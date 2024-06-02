@@ -36,7 +36,7 @@
     transform: translate(-50%, -50%);
     top: 50%;
     width: 40%;
-    background-color: var(--color-btnextra);
+    /* background-color: var(--color-btnextra); */
     /* color: var(--color-primary); */
     /* text-decoration: none; */
     border-radius: 20px;
@@ -63,7 +63,7 @@
 
 @media (max-width: 900px) {
     .promo-btn a {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -112,13 +112,13 @@
 
 @media (max-width: 800px) {
     .category-content {
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
     }
     .category-header h4 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .category a {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 

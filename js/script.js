@@ -1,8 +1,23 @@
 /* Open / Close Menu */ 
 
+// function openNav() {
+//     document.getElementById("navMenu").style.width = "500px";
+//     document.getElementById("overlay").style.display = "block";
+// }
+
 function openNav() {
-    document.getElementById("navMenu").style.width = "500px";
-    document.getElementById("overlay").style.display = "block";
+    var navMenu = document.getElementById("navMenu");
+    var overlay = document.getElementById("overlay");
+
+    if (window.innerWidth <= 600) {
+        navMenu.style.width = "250px"; // Small screen width
+    } else if (window.innerWidth <= 1024) {
+        navMenu.style.width = "350px"; // Medium screen width
+    } else {
+        navMenu.style.width = "500px"; // Large screen width
+    }
+
+    overlay.style.display = "block";
 }
 
 function closeNav() {
