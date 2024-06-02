@@ -11,6 +11,7 @@
   --color-boxbackground: #565656;
   --color-categorybtn: #48abb4;
   --color-categorybtnhover: #ff8000;
+  --color-movieoverlay: rgba(255, 128, 0, 0.80);
 
   --color-btn: #028e9b;
   --color-btnextra: #06555c; /*icon backgrounds*/

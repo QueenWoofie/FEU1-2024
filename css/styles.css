@@ -160,7 +160,7 @@ a .images {
   align-items: center;
 }
 
-.overlay {
+.fadeoverlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -381,11 +381,8 @@ p {
   }
 
   .sidebar ul {
-    list-style-type: none;
     padding: 10px 0px;
     width: 200px;
-    text-align: center;
-    flex-grow: 1;
     margin-top: -3px;
   }
   
@@ -396,32 +393,15 @@ p {
   .sidebar ul li a {
     text-decoration: none;
     font-size: 1em;
-    color: var(--color-primary);
-    display: block;
-    transition: 0.3s;
-    border-bottom: 1px solid var(--color-primary);
   }
   
   .sidebar ul li a:hover {
-    color: var(--color-texthover);
     font-size: 1.1em;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .displaygenre {
-    background-color: var(--color-btn);
-    border-radius: 30px;
   }
   
   /* Extended List  */
   
   .sidebar-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 20px;
     width: 100%;
     padding: 10px 20px;
@@ -431,53 +411,34 @@ p {
   }
   
   .sidebar-link {
-    color: var(--color-primary);
-    text-decoration: none;
     font-size: 1em;
-    transition: 0.3s;
   }
   
   .sidebar-link:hover {
-    color: var(--color-texthover);
     font-size: 1.05;
   }
   
   /* Changelog */
   
   .version-num {
-    position: relative;
     font-size: 0.75em;
-    text-decoration: none;
-    color: var(--color-breadcrumb);
     margin: 10px 0px;
-  }
-  
-  .version-num:hover {
-    color: var(--color-breadcrumbactive)
   }
   
   /* Main Category / Titles */
   
   .sidetitle {
     font-size: 1em;
-    color: var(--color-primary);
-    background-color: var(--color-btn);
-    display: flex;
     width: 200px;
     height: 65px;
     padding: 12px 15px;
-    align-items: center;
     gap: 15px;
-    border-radius: 30px;
     border: 0;
-    justify-content: center;
     margin: 0 auto;
   }
   
   .sidetitle:hover {
-    color: var(--color-texthover);
     font-size: 1.1em;
-    cursor: pointer;
   }
   
   /* Logo */
@@ -486,9 +447,5 @@ p {
     width: 100px;
     height: auto;
     padding-top: 10px;
-  }
-  
-  .sidebar-logo:hover {
-    box-shadow: var(--boxshadow-hover);
   }
 }

@@ -7,7 +7,7 @@
 
 function openNav() {
     var navMenu = document.getElementById("navMenu");
-    var overlay = document.getElementById("overlay");
+    var fadeoverlay = document.getElementById("fadeoverlay");
 
     if (window.innerWidth <= 600) {
         navMenu.style.width = "250px"; // Small screen width
@@ -17,12 +17,12 @@ function openNav() {
         navMenu.style.width = "500px"; // Large screen width
     }
 
-    overlay.style.display = "block";
+    fadeoverlay.style.display = "block";
 }
 
 function closeNav() {
     document.getElementById("navMenu").style.width = "0";
-    document.getElementById("overlay").style.display = "none";
+    document.getElementById("fadeoverlay").style.display = "none";
 }
 
 /* Genre Menu List - Sidebar*/
@@ -59,3 +59,38 @@ function toggleGenres () {
 //     }
 //     x[slideIndex[no]-1].style.display = "block";
 // }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+
+//MOVIE OVERLAY
+
+document.addEventListener("DOMContentLoaded", function() {
+    const movies = document.querySelectorAll(".movie");
+
+    movies.forEach(movie => {
+        movie.addEventListener("click", function() {
+            const title = movie.getAttribute("data-title");
+            const year = movie.getAttribute("data-year");
+            const runtime = movie.getAttribute("data-runtime");
+            const movieInfo = movie.querySelector(".movie-info");
+
+            movie.querySelector(".movie-title").textContent = title;
+            movie.querySelector(".movie-year").textContent = `Year: ${year}`;
+            movie.querySelector(".movie-runtime").textContent = `Runtime: ${runtime}`;
+            movie.querySelector(".view-more").href = `${title.toLowerCase().replace(/ /g, '-')}.html`; // Assuming a standard URL format
+
+            movieInfo.style.display = "block";
+        });
+    });
+});
+
+function closeInfo(event) {
+    event.stopPropagation();
+    event.target.closest(".movie-info").style.display = "none";
+}

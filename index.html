@@ -66,7 +66,7 @@
       <a class="version-num" href="changelog/changelog.html">0.0.1</a>
       <a href="index.html"><img src="assets/images/squareeyes-logo.png" class="sidebar-logo" alt="SquareEyes Logo" /></a>
     </div>
-    <div id="overlay" class="overlay"></div>
+    <div id="fadeoverlay" class="fadeoverlay"></div>
 
     <main>
       <!-- <nav aria-label="breadcrumb">
@@ -92,7 +92,16 @@
           <a href="action-adventure.html" class="view-more" alt="click here to view more action and adventure">View More</a>
         </div>
         <div class="category-content">
-          <div class="movie"><img src="assets/posters/action-adventure/aquaman-movie-poster.png" alt="Aquaman movie poster"></div>
+          <div class="movie" data-title="Aquaman" data-year="2018" data-runtime="143 min">
+            <img src="assets/posters/action-adventure/aquaman-movie-poster.png" alt="Aquaman movie poster">
+            <div class="movie-info">
+              <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+              <h3 class="movie-title"></h3>
+              <p class="movie-year"></p>
+              <p class="movie-runtime"></p>
+              <a class="view-more" href="#">Go to Movie Page</a>
+            </div>
+          </div>
           <div class="movie"><img src="assets/posters/action-adventure/baby-driver-theatrical-movie-poster.png" alt="Baby Driver movie poster"></div>
           <div class="movie"><img src="assets/posters/action-adventure/black-widow-movie-poster.png" alt="Black Widow movie poster"></div>
           <div class="movie"><img src="assets/posters/action-adventure/deadpool-movie-poster.png" alt="Deadpool movie poster"></div>
