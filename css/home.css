@@ -95,6 +95,7 @@
     background-color: var(--color-categorybtn);
     padding: 5px 10px;
     border-radius: 5px;
+    margin-bottom: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -114,6 +115,7 @@
 .movie {
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 .movie img {
@@ -160,7 +162,7 @@
 
 @media (min-width: 801px) and (max-width: 1199px) {
     .category-content {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     .view-more {
         display: flex;
@@ -170,7 +172,7 @@
 
 @media (min-width: 2040px) {
     .category-content {
-        grid-template-columns: repeat(auto-fill, minmax (300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
@@ -210,5 +212,9 @@
         top: 5px;
         right: 5px;
         z-index: 101;
+        transition: scale 0.3s ease ;
       }
+    .movie-info img:hover {
+        scale: 1.2em;
+    }
 }
