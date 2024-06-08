@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SquareEyes, Aquaman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aquaman, the adventure of the epic superhero from the DC Comics universe. Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="left-icons">
+        <div class="menu" onclick="openNav()">
+          <img src="assets/icons/menu.svg" alt="menu icon" class="menu-icon">
+        </div>
+        <div class="cart-container">
+            <img src="assets/icons/cartamount.svg" alt="Cart" class="cart-icon">
+            <span class="cart-amount">1</span>
+        </div>
+      </div>
+      <a href="index.html" class="images">
+        <img class= "logo" src="assets/images/squareeyes-logo.png" alt="square eyes logo" >
+      </a> 
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>          
+          <li class="breadcrumb-item active">Cart</li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- MENU -->
+    
+    <div id="navMenu" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <img src="assets/icons/menuclose.svg" alt="Menu Exit" class="closemenu-icon">
+      </a>
+      <ul>
+        <li>
+          <button class="sidetitle" onclick="toggleGenres()">
+            <img src="assets/icons/menuticket.svg" class="iconmed">MOVIES
+          </button>
+        </li>
+          <ul id="genreList" class="hidden">
+            <li><a href="movies.html">BROWSE ALL</a></li>
+            <li><a href="action-adventure.html">ACTION & ADVENTURE</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">COMEDY</a></li>
+            <!-- <li><a href="crime.html">CRIME</a></li> -->
+            <li><a href="javascript:void(0)" class="under-construction">DRAMA</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">FAMILY & KIDS</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">FANTASY</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">HORROR</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">MUSICAL</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">ROMANCE</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">SCI-FI</a></li>
+            <!-- <li><a href="short.html">SHORT</a></li> -->
+            <li><a href="javascript:void(0)" class="under-construction">THRILLER</a></li>
+          </ul>
+        </ul>
+      <div class="sidebar-bottom">
+         <a class="sidebar-link" href="about.html">ABOUT US</a>
+         <a class="sidebar-link" href="contact.html">CONTACT</a>
+      </div>
+      <a class="version-num" href="changelog/changelog.html">0.0.1</a>
+      <a href="index.html"><img src="assets/images/squareeyes-logo.png" class="sidebar-logo" alt="SquareEyes Logo" /></a>
+    </div>
+    <div id="fadeoverlay" class="fadeoverlay"></div>
+
+    <main class="maincrumb">
+
+
+<!-- CHECKOUTC -->
+
+<h3 class="top-title">CHECKOUT</h3>
+
+<div class="container3">
+    <fieldset class="cart-content">
+        <legend>Cart</legend>
+        <div class="cart-item">
+            <div class="product">
+                <img src="assets/posters/action-adventure/aquaman-movie-poster.png" alt="Aquaman movie poster" class="poster">
+                <div class="details">
+                    <h3>Aquaman</h3>
+                    <p>Action, Adventure, Fantasy</p>
+                    <p>2018, 2h 23min</p>                   
+                    <p>Jason Momoa, Amber Heard</p>             
+                </div>
+            </div>
+            <div class="plot">
+                <p>Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.</p>
+            </div>
+            <div class="price-section">
+                <div class="price">$22.99</div>
+                <div class="remove">
+                    <button class="remove-btn"><a href="cart.html"><img src="assets/icons/removefromcart.svg" alt="Remove product from cart"></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <span>TOTAL</span>
+            <span>$22.99</span>
+        </div>
+    </fieldset>
+
+    <fieldset class="delivery-info">
+        <legend>Delivery Information</legend>
+        <form>
+            <div class="form-group">
+                <label for="first-name" class="required">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="last-name" class="required">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="required">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="required">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="zip" class="required">Zip</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city" class="required">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country" class="required">Country</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+        </form>
+    </fieldset>
+
+    <fieldset class="payment-method">
+        <legend>Payment Method</legend>
+        <form style="display: flex; flex-wrap: wrap;">
+            <label style="flex: 22%;">
+                <input type="radio" name="payment" value="credit-card" required> Credit Card
+            </label>
+            <label style="flex: 22%;">
+                <input type="radio" name="payment" value="klarna" required> Klarna
+            </label>
+            <label style="flex: 22%;">
+                <input type="radio" name="payment" value="paypal" required> PayPal
+            </label>
+            <label style="flex: 22%;">
+                <input type="radio" name="payment" value="vipps" required> Vipps
+            </label>
+            <div class="card-details" style="flex: 100%;">
+                <div class="form-group">
+                    <label for="card-number" class="required">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exp-date" class="required">Expiration Date</label>
+                    <input type="text" id="exp-date" name="exp-date" placeholder="MM / YY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ccv" class="required">CCV</label>
+                    <input type="text" id="ccv" name="ccv" placeholder="XXX" required>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+
+    <fieldset class="order-summary">
+        <legend>Order Summary</legend>
+        <div class="summary-item">
+            <p>Title: Aquaman</p>
+            <p>Year: 2018</p>
+            <p>Runtime: 2h 23min</p>
+            <p>Price: $22.99</p>
+        </div>
+    </fieldset>
+
+    <fieldset class="checkout-confirmation">
+        <legend>Checkout Confirmation</legend>
+        <form>
+            <label>
+                <input type="checkbox" name="terms" required>
+                <p>I agree to the Terms of Sale. By checking this box, I confirm that I have read and accepted the Terms of Sale, including the return policy and privacy terms associated with purchasing videos on Square Eyes.</p><a class="view-more under-construction" href="javascript:void(0)">Terms of Sale</a>
+            </label>
+            <button type="submit" class="order-now"><a href="order-confirm.html">Order Now</a></button>
+        </form>
+    </fieldset>
+
+      <!-- Under Construction Pop-Up -->
+      <div id="construction-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()"><img class="closemenu-icon" src="assets/icons/menuclose.svg"></span>
+          <h2>Under Construction</h2>
+          <p>This section is currently under construction. Please check back later!</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="maincrumb">
+      <p class="credits">@2024 Thea</p>
+      <div class="social-media">
+        <a class="under-construction" href="javascript:void(0)">
+          <img class="iconmed" src="assets/icons/facebook-icon.svg">
+        </a>
+        <a class="under-construction" href="javascript:void(0)">
+          <img class="iconmed" src="assets/icons/snapchat-icon.svg">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

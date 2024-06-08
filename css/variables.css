@@ -9,9 +9,12 @@
   --color-breadcrumb: #565656; /*breadcrumbs + box backgrounds*/
   --color-breadcrumbactive: #ffffffbd;
   --color-boxbackground: #565656;
+  --color-boxbackground2: rgba(255, 255, 255, 0.10);
   --color-categorybtn: #48abb4;
   --color-categorybtnhover: #ff8000;
   --color-movieoverlay: rgba(255, 128, 0, 0.80);
+  --color-detailcategory: #013b40;
+  --color-border: #9cf2fa;
 
   --color-btn: #028e9b;
   --color-btnextra: #06555c; /*icon backgrounds*/
@@ -20,6 +23,9 @@
   
   --boxshadow-hover: #00eaff21 0px 0px 20px 10px inset; /*logo*/
 
+/* PADDING */
+
   --height-header: 80px;
   --main-padding: 10px 100px;
+  --height-breadcrumbs: 120px; /* TOP */
 }

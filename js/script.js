@@ -94,3 +94,24 @@ function closeInfo(event) {
     event.stopPropagation();
     event.target.closest(".movie-info").style.display = "none";
 }
+
+// UNDER CONSTRUCTION
+
+function openPopup() {
+    document.getElementById("construction-popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("construction-popup").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const underConstructionLinks = document.querySelectorAll(".under-construction");
+
+    underConstructionLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default navigation behavior
+            openPopup();
+        });
+    });
+});

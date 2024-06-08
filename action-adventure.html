@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SquareEyes, Action & Adventure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feel like going on an adventure? Check out your favorite action and adventure movies right here at Square Eyes! Let us venture into unknown lands together, explore deep ruins, find hidden treasures and face dangers through the best movies out there! Summon your inner Lara Croft and join us!">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="left-icons">
+        <div class="menu" onclick="openNav()">
+          <img src="assets/icons/menu.svg" alt="menu icon" class="menu-icon">
+        </div>
+        <a href="cart.html" class="cart">
+          <img src="assets/icons/emptycart.svg" alt="Cart Icon" class="cart-icon" />
+        </a>
+      </div>
+      <a href="index.html" class="images">
+        <img class= "logo" src="assets/images/squareeyes-logo.png" alt="square eyes logo" >
+      </a> 
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="movies.html">Movies</a></li>
+          <li class="breadcrumb-item active">Action</li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- MENU -->
+    
+    <div id="navMenu" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <img src="assets/icons/menuclose.svg" alt="Menu Exit" class="closemenu-icon">
+      </a>
+      <ul>
+        <li>
+          <button class="sidetitle" onclick="toggleGenres()">
+            <img src="assets/icons/menuticket.svg" class="iconmed">MOVIES
+          </button>
+        </li>
+          <ul id="genreList" class="hidden">
+            <li><a href="movies.html">BROWSE ALL</a></li>
+            <li><a href="action-adventure.html">ACTION & ADVENTURE</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">COMEDY</a></li>
+            <!-- <li><a href="crime.html">CRIME</a></li> -->
+            <li><a href="javascript:void(0)" class="under-construction">DRAMA</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">FAMILY & KIDS</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">FANTASY</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">HORROR</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">MUSICAL</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">ROMANCE</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">SCI-FI</a></li>
+            <!-- <li><a href="short.html">SHORT</a></li> -->
+            <li><a href="javascript:void(0)" class="under-construction">THRILLER</a></li>
+          </ul>
+        </ul>
+      <div class="sidebar-bottom">
+         <a class="sidebar-link" href="about.html">ABOUT US</a>
+         <a class="sidebar-link" href="contact.html">CONTACT</a>
+      </div>
+      <a class="version-num" href="changelog/changelog.html">0.0.1</a>
+      <a href="index.html"><img src="assets/images/squareeyes-logo.png" class="sidebar-logo" alt="SquareEyes Logo" /></a>
+    </div>
+    <div id="fadeoverlay" class="fadeoverlay"></div>
+
+    <main class="maincrumb">
+
+
+<!-- CATEGORY MENU -->
+
+<div class="container">
+    <nav class="category-menu">
+        <ul>
+            <li><a href="movies.html" class="category-link">Browse All</a></li>
+            <li><a href="action-adventure.html" class="category-link active">Action</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Comedy</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Drama</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Family</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Fantasy</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Horror</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Musical</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Romance</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Sci-Fi</a></li>
+            <li><a href="javascript:void(0)" class="category-link under-construction">Thriller</a></li>
+        </ul>
+    </nav>
+    
+<!-- MOVIE CATEGORIES SECTION -->
+
+<div class="main-content">
+    <section class="category">
+        <div class="category-header" style="justify-content: center;">
+            <h4>ACTION</h4>
+        </div>
+        <div class="category-content">
+            <div class="movie" data-title="Aquaman" data-year="2018" data-runtime="143 min">
+                <img src="assets/posters/action-adventure/aquaman-movie-poster.png" alt="Aquaman movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more" href="#" alt="Find more info about the movie here">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Baby Driver" data-year="2017" data-runtime="113 min">
+                <img src="assets/posters/action-adventure/baby-driver-theatrical-movie-poster.png" alt="Baby Driver movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Black Widow" data-year="2021" data-runtime="134 min">
+                <img src="assets/posters/action-adventure/black-widow-movie-poster.png" alt="Black Widow movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Deadpool" data-year="2016" data-runtime="108 min">
+                <img src="assets/posters/action-adventure/deadpool-movie-poster.png" alt="Deadpool movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Iron Man" data-year="2008" data-runtime="126 min">
+                <img src="assets/posters/action-adventure/iron-man-movie-poster.png" alt="Iron Man movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Logan" data-year="2017" data-runtime="137 min">
+                <img src="assets/posters/action-adventure/logan-theatrical-movie-poster.png" alt="Logan movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Spectre" data-year="2015" data-runtime="148 min">
+                <img src="assets/posters/action-adventure/spectre-theatrical-movie-poster.png" alt="Spectre movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Suicide Squad" data-year="2016" data-runtime="123 min">
+                <img src="assets/posters/action-adventure/suicide-squad-movie-poster.png" alt="Suicide squad movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="The Avengers" data-year="2012" data-runtime="143 min">
+                <img src="assets/posters/action-adventure/the-avengers-movie-poster.png" alt="The avengers movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Venom" data-year="2018" data-runtime="112 min">
+                <img src="assets/posters/action-adventure/venom-movie-poster.png" alt="Venom movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Wonder Woman" data-year="2017" data-runtime="141 min">
+                <img src="assets/posters/action-adventure/wonder-woman-movie-poster.png" alt="Wonder Woman movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+            <div class="movie" data-title="Wonder Woman 1984" data-year="2020" data-runtime="151 min">
+                <img src="assets/posters/action-adventure/wonder-woman-1984-movie-poster.png" alt="Wonder Woman 1984 movie poster">
+                <div class="movie-info">
+                    <span class="close-btn" onclick="closeInfo(event)"><img src="assets/icons/menuclose.svg" class=closemenu-icon alt="Exit overlay"></span>
+                    <h3 class="movie-title"></h3>
+                    <p class="movie-year"></p>
+                    <p class="movie-runtime"></p>
+                    <a class="view-more under-construction" href="javascript:void(0)">More info</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+      <!-- Under Construction Pop-Up -->
+      <div id="construction-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()"><img class="closemenu-icon" src="assets/icons/menuclose.svg"></span>
+          <h2>Under Construction</h2>
+          <p>This section is currently under construction. Please check back later!</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="maincrumb">
+      <p class="credits">@2024 Thea</p>
+      <div class="social-media">
+        <a class="under-construction" href="javascript:void(0)">
+          <img class="iconmed" src="assets/icons/facebook-icon.svg">
+        </a>
+        <a class="under-construction" href="javascript:void(0)">
+          <img class="iconmed" src="assets/icons/snapchat-icon.svg">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

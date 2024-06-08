@@ -1,6 +1,10 @@
 @import url("reset.css");
 @import url("variables.css");
 @import url("home.css");
+@import url("movies.css");
+@import url("moviedetail.css");
+@import url("cart.css");
+@import url("confirmation.css");
 /* @import url("carousel.css"); */
 
 body {
@@ -11,6 +15,15 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+/* SCROLLBAR */
+
+.custom-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-gutter: auto;
+  scrollbar-color: var(--color-menu) var(--color-nav);
 }
 
 /*.centered {
@@ -26,21 +39,33 @@ main {
   padding: var(--main-padding);
   width: 100%;
   position: relative;
-  top: var(--height-header)
+  top: var(--height-header);
+}
+
+.maincrumb {
+  top: var(--height-breadcrumbs);
 }
 
 .breadcrumb {
-  display:flex;
+  display: flex;
   list-style: none;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 0.75em;
   border-bottom: 2px solid var(--color-breadcrumb);
   width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  position: absolute;
+  top: var(--height-header);
+  background-color: var(--color-secondary);
+  left: 0;
 }
 
 .breadcrumb-item {
   margin-right: 10px;
+  padding: 10px;
+  /* padding: var(--main-padding); */
 }
 
 .breadcrumb-item a {
@@ -125,8 +150,22 @@ footer {
 .credits {
   color: var(--color-primary);
   font-size: 0.7em;
-  font-weight: 500;
+  font-weight: 300;
   word-wrap: break-word;
+}
+
+.social-media {
+  display: flex;
+  min-width: fit-content;
+  gap: 10px;
+}
+
+.social-media .iconmed:hover {
+  color: var(--color-categorybtnhover);
+  box-shadow: 0 0 10px var(--color-categorybtnhover);
+  text-shadow: 0 0 10px var(--color-categorybtnhover);
+  border-radius: 50%;
+  transform: scale(1.1);
 }
 
 /* logo */ 
@@ -199,6 +238,15 @@ a .images {
 .closemenu-icon {
   width: 20px;
   height: auto;
+  cursor: pointer;
+}
+
+.closemenu-icon:hover {
+  color: var(--color-categorybtnhover);
+  box-shadow: 0 0px 10px 3px var(--color-categorybtnhover);
+  text-shadow: 0 0 10px 3px var(--color-categorybtnhover);
+  border-radius: 50%;
+  padding: 1px;
 }
 
 /* Main List  */
@@ -463,4 +511,28 @@ p {
     height: auto;
     padding-top: 10px;
   }
+}
+
+/* Under Construction Pop-Up */ 
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: var(--color-nav);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
 }
