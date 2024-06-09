@@ -40,7 +40,7 @@
     flex: 3;
 }
 
-.poster {
+.detail-poster {
     /* width: auto; */
     /* height: auto; */
     max-width: 100%;
@@ -202,7 +202,7 @@
         flex-direction: column;
     }
 
-    .poster {
+    .detail-poster {
         height: auto;
         min-width: fit-content;
     }
