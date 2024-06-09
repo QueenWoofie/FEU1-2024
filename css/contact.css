@@ -239,7 +239,11 @@
 }
 
 .contact-group textarea {
-    height: 100px;
+    height: 500px;
+}
+
+.contact-message {
+    grid-column: span 2;
 }
 
 button {
@@ -269,3 +273,21 @@ button:hover {
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    .contact-message {
+        grid-column: span 1;
+    }
+
+    .contact {
+        flex: 100%;
+    }
+
+    .contact-form {
+        flex: 100%;
+    }
+
+    .contact-gif {
+        flex: 100%;
+        text-align: center;        
+    }
+}
