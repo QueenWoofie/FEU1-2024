@@ -5,12 +5,12 @@
   --color-primary: #ffffff; /*text*/
   --color-secondary: #0F1417; /*background*/
   --color-nav: #03838F; /*footer + header*/
-  --color-menu: #368087; /*sidebar/menu*/
+  --color-menu: #24595e; /*sidebar/menu*/
   --color-breadcrumb: #565656; /*breadcrumbs + box backgrounds*/
   --color-breadcrumbactive: #ffffffbd;
   --color-boxbackground: #565656;
   --color-boxbackground2: rgba(255, 255, 255, 0.10);
-  --color-categorybtn: #368087; /* #48ABB4 */
+  --color-categorybtn: #24595e; /* #48ABB4 */
   --color-categorybtnhover: #ff8000;
   --color-movieoverlay: rgba(255, 128, 0, 0.80);
   --color-detailcategory: #013b40;
