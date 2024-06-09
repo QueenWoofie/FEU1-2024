@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SquareEyes, About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to SquareEyes, a home for entertainment built by movie lovers for movie lovers.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="left-icons">
+        <div class="menu" onclick="openNav()">
+          <img src="assets/icons/menu.svg" alt="menu icon" class="menu-icon">
+        </div>
+        <a href="cart.html" class="cart">
+            <img src="assets/icons/emptycart.svg" alt="Cart Icon" class="cart-icon" />
+          </a>
+      </div>
+      <a href="index.html" class="images">
+        <img class= "logo" src="assets/images/squareeyes-logo.png" alt="square eyes logo" >
+      </a> 
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>          
+          <li class="breadcrumb-item active">About Us</li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- MENU -->
+    
+    <div id="navMenu" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <img src="assets/icons/menuclose.svg" alt="Menu Exit" class="closemenu-icon">
+      </a>
+      <ul>
+        <li>
+          <button class="sidetitle" onclick="toggleGenres()">
+            <img src="assets/icons/menuticket.svg" class="iconmed">MOVIES
+          </button>
+        </li>
+          <ul id="genreList" class="hidden">
+            <li><a href="movies.html">BROWSE ALL</a></li>
+            <li><a href="action-adventure.html">ACTION & ADVENTURE</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">COMEDY</a></li>
+            <!-- <li><a href="crime.html">CRIME</a></li> -->
+            <li><a href="javascript:void(0)" class="under-construction">DRAMA</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">FAMILY & KIDS</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">FANTASY</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">HORROR</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">MUSICAL</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">ROMANCE</a></li>
+            <li><a href="javascript:void(0)" class="under-construction">SCI-FI</a></li>
+            <!-- <li><a href="short.html">SHORT</a></li> -->
+            <li><a href="javascript:void(0)" class="under-construction">THRILLER</a></li>
+          </ul>
+        </ul>
+      <div class="sidebar-bottom">
+         <a class="sidebar-link" href="about.html">ABOUT US</a>
+         <a class="sidebar-link" href="contact.html">CONTACT</a>
+      </div>
+      <a class="version-num" href="changelog/changelog.html">0.0.1</a>
+      <a href="index.html"><img src="assets/images/squareeyes-logo.png" class="sidebar-logo" alt="SquareEyes Logo" /></a>
+    </div>
+    <div id="fadeoverlay" class="fadeoverlay"></div>
+
+    <main class="maincrumb padding-on">
+
+
+<!-- ABOUT US -->
+
+<h3 class="top-title">THE TEAM BEHIND <strong>SQUARE</strong>EYES</h3>
+
+<div class="container4">
+    <div class="promo-gif">
+        <img src="assets/gifs/about-us-page.gif">
+    </div>
+    <section class="about-us">
+        <p>Welcome to Square Eyes, the premier destination for cinema enthusiasts who cherish originality and diversity in filmmaking. Founded with a passion for connecting film-lovers with the creators behind the camera, Square Eyes is more than just a video streaming platform—it's a community that thrives on inclusivity and the celebration of unique voices.</p>
+        <p>At Square Eyes, we believe that every film has a story worth telling, and every filmmaker deserves a platform to shine. Our mission is to bring these stories to you, from gripping documentaries to awe-inspiring indie films, all available directly from the filmmakers who crafted them. By purchasing videos on Square Eyes, you are directly supporting these artists and contributing to a more vibrant, inclusive film community.</p>
+        <p>Our platform is designed to make discovering your next favorite film easy and enjoyable. Whether you’re browsing through our carefully curated categories or exploring our extensive collections, you're sure to find something that captures your heart and imagination. Every purchase you make not only supports independent filmmakers but also helps foster a culture of diversity and innovation in the film industry.</p>
+        <p>Join us at Square Eyes, where your love for cinema helps nurture the next generation of filmmakers. Together, we are connecting film-lovers across the globe through a shared passion for great storytelling.</p>
+    </section>
+</div>
+            
+
+      <!-- Under Construction Pop-Up -->
+      <div id="construction-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()"><img class="closemenu-icon" src="assets/icons/menuclose.svg"></span>
+          <h2>Under Construction</h2>
+          <p>This section is currently under construction. Please check back later!</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="maincrumb">
+      <p class="credits">@2024 Thea</p>
+      <div class="social-media">
+        <a class="under-construction" href="javascript:void(0)">
+          <img class="iconmed" src="assets/icons/facebook-icon.svg">
+        </a>
+        <a class="under-construction" href="javascript:void(0)">
+          <img class="iconmed" src="assets/icons/snapchat-icon.svg">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
